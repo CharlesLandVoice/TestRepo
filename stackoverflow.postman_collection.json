@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "7532d054-de29-434b-a8c9-c5044313b790",
+		"name": "stackoverflow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{stack}}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{stack}}/2.2/questions?order=desc&sort=activity&site=stackoverflow",
+					"host": [
+						"{{stack}}"
+					],
+					"path": [
+						"2.2",
+						"questions"
+					],
+					"query": [
+						{
+							"key": "order",
+							"value": "desc"
+						},
+						{
+							"key": "sort",
+							"value": "activity"
+						},
+						{
+							"key": "site",
+							"value": "stackoverflow"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "stack",
+			"value": "https://api.stackexchange.com/"
+		}
+	]
+}
