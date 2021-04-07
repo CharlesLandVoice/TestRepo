@@ -13,21 +13,15 @@
           "script": {
             "id": "5ae33e56-d1e8-42b5-af7b-1272bbd889b5",
             "exec": [
-              "pm.test(\"Body matches string\", function () {",
-              "    pm.expect(pm.response.text()).to.include(\"string_you_want_to_search\");",
-              "});",
               "pm.test(\"Status code is 200\", function () {",
               "    pm.response.to.have.status(200);",
-              "});",
-              "pm.test(\"Response time is less than 200ms\", function () {",
-              "    pm.expect(pm.response.responseTime).to.be.below(200);",
               "});"
             ],
             "type": "text/javascript"
           }
         }
       ],
-      "_postman_id": "ec2fdc9f-1e7f-42c8-b24d-84eb1e99e0d7",
+      "id": "ec2fdc9f-1e7f-42c8-b24d-84eb1e99e0d7",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
       },
@@ -86,10 +80,9 @@
   ],
   "variable": [
     {
-      "id": "3937fce4-ce7b-454f-9078-1433add7b861",
+      "id": "eb78630b-b700-4bdc-8f2f-727240d17b90",
       "key": "stack",
-      "value": "https://api.stackexchange.com/",
-      "type": "string"
+      "value": "https://api.stackexchange.com/"
     }
   ]
 }
