@@ -1,0 +1,75 @@
+{
+  "info": {
+    "_postman_id": "7532d054-de29-434b-a8c9-c5044313b790",
+    "name": "stackoverflow",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "{{stack}}",
+      "_postman_id": "ec2fdc9f-1e7f-42c8-b24d-84eb1e99e0d7",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{stack}}/2.2/questions?order=desc&sort=activity&site=stackoverflow",
+          "host": [
+            "{{stack}}"
+          ],
+          "path": [
+            "2.2",
+            "questions"
+          ],
+          "query": [
+            {
+              "key": "order",
+              "value": "desc"
+            },
+            {
+              "key": "sort",
+              "value": "activity"
+            },
+            {
+              "key": "site",
+              "value": "stackoverflow"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "2f9b6a4f-ca55-41ac-8aeb-ab978825a76e",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "543274d6-bbcd-4fb2-90ee-190d78be7af3",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "1ccdb8e2-8a6b-446f-b6d1-6526dd9007d4",
+      "key": "stack",
+      "value": "https://api.stackexchange.com/",
+      "type": "string"
+    }
+  ]
+}
